@@ -4,6 +4,7 @@ Utilities help to migrate your [Node.js](https://nodejs.org/en) projects to ESM 
 
 > All utility functions here don't require you to supply [import.meta.url](https://nodejs.org/api/esm.html#importmetaurl) and will use the function caller file's path as the base.
 
+> All required dependencies are bundled -- no need to install any dependencies.
 
 ```typescript
 /**
@@ -47,5 +48,4 @@ export declare const getCurrentDirPath: () => string;
  * Use it like this: `isMain()`.
  */
 export declare const isMain: () => boolean;
-
 ```
