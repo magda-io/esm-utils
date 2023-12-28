@@ -2,8 +2,9 @@
   "name": "@magda/esm-utils",
   "version": "1.0.0",
   "type": "module",
+  "typings": "./dist/esmUtils.d.ts",
   "exports": {
-    ".": "./dist/index.js",
+    ".": "./dist/esmUtils.js",
     "./package.json": "./package.json"
   },
   "description": "Utilities helps when migrating to ESM projects",
