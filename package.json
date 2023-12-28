@@ -1,8 +1,7 @@
 {
   "name": "@magda/esm-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
-  "typings": "./dist/esmUtils.d.ts",
   "exports": {
     ".": "./dist/esmUtils.js",
     "./package.json": "./package.json"
