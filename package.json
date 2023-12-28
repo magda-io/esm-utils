@@ -9,16 +9,17 @@
   },
   "scripts": {
     "prebuild": "rimraf dist lib",
-    "build": "yarn build-main && yarn build-types && rimraf lib",
+    "build": "yarn build-main && yarn build-types && yarn build-types-bundle && rimraf lib",
     "build-main": "node esbuild.js",
-    "build-types": "tsc --emitDeclarationOnly && api-extractor run --local"
+    "build-types": "tsc --emitDeclarationOnly",
+    "build-types-bundle": "api-extractor run --local"
   },
   "description": "Utilities helps when migrating to ESM projects",
   "main": "index.js",
   "repository": "git@github.com:magda-io/esm-utils.git",
   "author": "Jacky Jiang <t83714@gmail.com>",
   "license": "Apache-2.0",
-  "private": true,
+  "private": false,
   "devDependencies": {
     "@microsoft/api-extractor": "^7.39.0",
     "@types/node": "^18.11.9",

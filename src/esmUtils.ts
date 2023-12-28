@@ -34,6 +34,9 @@ export function requireResolve(id: string): string {
 export const __filename = (): string =>
   fileURLToPath(callerPath({ depth: 1 }) as string);
 
+/**
+ * Alias of `__filename`.
+ */
 export const getCurrentFilePath = __filename;
 
 /**
@@ -44,6 +47,10 @@ export const getCurrentFilePath = __filename;
 export const __dirname = (): string =>
   dirname(fileURLToPath(callerPath({ depth: 1 }) as string));
 
+
+/**
+ * Alias of `__dirname`.
+ */
 export const getCurrentDirPath = __dirname;
 
 /**
