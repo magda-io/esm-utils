@@ -1,0 +1,20 @@
+{
+  "name": "@magda/esm-utils",
+  "version": "1.0.0",
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.js",
+    "./package.json": "./package.json"
+  },
+  "description": "Utilities helps when migrating to ESM projects",
+  "main": "index.js",
+  "repository": "git@github.com:magda-io/esm-utils.git",
+  "author": "Jacky Jiang <t83714@gmail.com>",
+  "license": "Apache-2.0",
+  "private": true,
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "caller-path": "^4.0.0",
+    "typescript": "^5.3.3"
+  }
+}
