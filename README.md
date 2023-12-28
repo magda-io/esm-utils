@@ -1,5 +1,7 @@
 # esm-utils
 
+[![npm version](https://img.shields.io/npm/v/@magda/esm-utils.svg)](https://www.npmjs.com/package/@magda/esm-utils)
+
 Utilities help to migrate your [Node.js](https://nodejs.org/en) projects to ESM projects.
 
 > All utility functions here don't require you to supply [import.meta.url](https://nodejs.org/api/esm.html#importmetaurl) and will use the function caller file's path as the base.
