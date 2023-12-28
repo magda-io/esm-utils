@@ -34,6 +34,8 @@ export function requireResolve(id: string): string {
 export const __filename = (): string =>
   fileURLToPath(callerPath({ depth: 1 }) as string);
 
+export const getCurrentFilePath = __filename;
+
 /**
  * This is an ESM replacement for `__dirname`.
  *
@@ -41,6 +43,8 @@ export const __filename = (): string =>
  */
 export const __dirname = (): string =>
   dirname(fileURLToPath(callerPath({ depth: 1 }) as string));
+
+export const getCurrentDirPath = __dirname;
 
 /**
  * Indicates that the script was run directly.
